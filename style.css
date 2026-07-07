@@ -224,3 +224,25 @@ footer {
     width:100%;
     margin-top:20px;
 }
+/* NGO Food Card */
+
+.food-card{
+    background:#ffffff;
+    padding:20px;
+    margin:20px 0;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+.food-card h3{
+    color:#2E8B57;
+    margin-bottom:10px;
+}
+
+.food-card p{
+    margin:8px 0;
+}
+
+.food-card button{
+    margin-right:10px;
+}
