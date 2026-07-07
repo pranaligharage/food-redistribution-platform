@@ -1,1 +1,63 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donor Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h2>Food Redistribution Platform</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="login.html">Logout</a>
+    </nav>
+</header>
+
+<section class="dashboard">
+
+    <h1>Donor Dashboard</h1>
+    <p>Donate surplus food to help reduce hunger.</p>
+
+    <form id="donationForm">
+
+        <label>Donor Name</label>
+        <input type="text" placeholder="Enter your name" required>
+
+        <label>Food Name</label>
+        <input type="text" placeholder="Enter food name" required>
+
+        <label>Food Type</label>
+        <select required>
+            <option>Vegetarian</option>
+            <option>Non-Vegetarian</option>
+        </select>
+
+        <label>Quantity (People Served)</label>
+        <input type="number" placeholder="Example: 50" required>
+
+        <label>Pickup Address</label>
+        <textarea rows="4" placeholder="Enter pickup address" required></textarea>
+
+        <label>Available Until</label>
+        <input type="datetime-local" required>
+
+        <button type="submit">Donate Food</button>
+
+    </form>
+
+</section>
+
+<script>
+document.getElementById("donationForm").addEventListener("submit", function(e){
+    e.preventDefault();
+    alert("Thank you! Your food donation has been submitted successfully.");
+    this.reset();
+});
+</script>
+
+</body>
+</html>
