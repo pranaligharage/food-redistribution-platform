@@ -246,3 +246,15 @@ footer {
 .food-card button{
     margin-right:10px;
 }
+.food-card button{
+    background:#2E8B57;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.food-card button:hover{
+    background:#1f6d43;
+}
