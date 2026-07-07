@@ -1,1 +1,55 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h2>Food Redistribution Platform</h2>
+<nav>
+<a href="index.html">Home</a>
+<a href="login.html">Login</a>
+</nav>
+</header>
+
+<div class="login-container">
+
+<h2>Create Account</h2>
+
+<form id="registerForm">
+
+<input type="text" placeholder="Full Name" required>
+
+<input type="email" placeholder="Email Address" required>
+
+<input type="password" placeholder="Password" required>
+
+<select required>
+<option value="">Select Role</option>
+<option>Donor</option>
+<option>NGO</option>
+<option>Receiver</option>
+</select>
+
+<button type="submit">Register</button>
+
+</form>
+
+</div>
+
+<script>
+document.getElementById("registerForm").addEventListener("submit",function(e){
+e.preventDefault();
+alert("Registration Successful!");
+window.location.href="login.html";
+});
+</script>
+
+</body>
+</html>
