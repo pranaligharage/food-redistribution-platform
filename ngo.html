@@ -1,1 +1,58 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGO Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h2>Food Redistribution Platform</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="login.html">Logout</a>
+    </nav>
+</header>
+
+<section class="dashboard">
+
+    <h1>NGO Dashboard</h1>
+    <p>Available Food Donations</p>
+
+    <div class="food-card">
+        <h3>🍱 Veg Biryani</h3>
+        <p><strong>Donor:</strong> ABC Restaurant</p>
+        <p><strong>Quantity:</strong> 50 People</p>
+        <p><strong>Pickup:</strong> MG Road, Pune</p>
+
+        <button onclick="acceptFood()">Accept</button>
+        <button onclick="rejectFood()">Reject</button>
+    </div>
+
+    <div class="food-card">
+        <h3>🥗 Vegetable Curry & Rice</h3>
+        <p><strong>Donor:</strong> Hotel Green Leaf</p>
+        <p><strong>Quantity:</strong> 30 People</p>
+        <p><strong>Pickup:</strong> FC Road, Pune</p>
+
+        <button onclick="acceptFood()">Accept</button>
+        <button onclick="rejectFood()">Reject</button>
+    </div>
+
+</section>
+
+<script>
+function acceptFood() {
+    alert("Food donation accepted successfully!");
+}
+
+function rejectFood() {
+    alert("Food donation rejected.");
+}
+</script>
+
+</body>
+</html>
