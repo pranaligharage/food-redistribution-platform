@@ -1,1 +1,61 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receiver Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h2>Food Redistribution Platform</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="login.html">Logout</a>
+    </nav>
+</header>
+
+<section class="dashboard">
+
+    <h1>Receiver Dashboard</h1>
+    <p>Available Food Near You</p>
+
+    <div class="food-card">
+        <h3>🍱 Veg Biryani</h3>
+        <p><strong>NGO:</strong> Helping Hands Foundation</p>
+        <p><strong>Location:</strong> Pune City</p>
+        <p><strong>Available Quantity:</strong> 50 Meals</p>
+
+        <button onclick="requestFood()">Request Food</button>
+    </div>
+
+    <div class="food-card">
+        <h3>🥗 Vegetable Curry & Rice</h3>
+        <p><strong>NGO:</strong> Food For All</p>
+        <p><strong>Location:</strong> Shivajinagar</p>
+        <p><strong>Available Quantity:</strong> 30 Meals</p>
+
+        <button onclick="requestFood()">Request Food</button>
+    </div>
+
+    <div class="food-card">
+        <h3>🍛 Dal & Chapati</h3>
+        <p><strong>NGO:</strong> Smile Foundation</p>
+        <p><strong>Location:</strong> Kothrud</p>
+        <p><strong>Available Quantity:</strong> 40 Meals</p>
+
+        <button onclick="requestFood()">Request Food</button>
+    </div>
+
+</section>
+
+<script>
+function requestFood() {
+    alert("Your food request has been sent successfully!");
+}
+</script>
+
+</body>
+</html>
