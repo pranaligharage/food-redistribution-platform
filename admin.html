@@ -1,1 +1,91 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h2>Food Redistribution Platform</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="login.html">Logout</a>
+    </nav>
+</header>
+
+<section class="dashboard">
+
+    <h1>Admin Dashboard</h1>
+    <p>Platform Overview</p>
+
+    <div class="admin-grid">
+
+        <div class="admin-card">
+            <h2>150</h2>
+            <p>Total Donations</p>
+        </div>
+
+        <div class="admin-card">
+            <h2>75</h2>
+            <p>Registered Donors</p>
+        </div>
+
+        <div class="admin-card">
+            <h2>25</h2>
+            <p>Registered NGOs</p>
+        </div>
+
+        <div class="admin-card">
+            <h2>120</h2>
+            <p>Food Requests</p>
+        </div>
+
+    </div>
+
+    <h2 style="margin-top:40px;">Recent Donations</h2>
+
+    <table>
+        <tr>
+            <th>Donor</th>
+            <th>Food</th>
+            <th>Quantity</th>
+            <th>Status</th>
+        </tr>
+
+        <tr>
+            <td>ABC Restaurant</td>
+            <td>Veg Biryani</td>
+            <td>50 Meals</td>
+            <td>Collected</td>
+        </tr>
+
+        <tr>
+            <td>Hotel Green Leaf</td>
+            <td>Rice & Curry</td>
+            <td>30 Meals</td>
+            <td>Pending</td>
+        </tr>
+
+        <tr>
+            <td>Fresh Mart</td>
+            <td>Bread & Fruits</td>
+            <td>20 Meals</td>
+            <td>Delivered</td>
+        </tr>
+
+    </table>
+
+</section>
+
+<script>
+window.onload = function(){
+    alert("Welcome Admin!");
+}
+</script>
+
+</body>
+</html>
